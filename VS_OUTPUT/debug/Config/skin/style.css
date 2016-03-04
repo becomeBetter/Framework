@@ -1,0 +1,21 @@
+*
+{
+    color:white;
+}
+QToolButton
+{
+    border:none;
+}
+QToolButton:hover
+{
+    border:2px solid rgb(49,56,202); 
+ }
+ QToolButton:checked
+ {
+     border:2px solid rgb(49,56,202); 
+ }
+ QFrame[TabMenu = "true"]
+ {
+     background-color:black;
+     color:White;
+ }

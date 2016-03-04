@@ -1,0 +1,12 @@
+#ifndef RC_FRAMEWORK_GLOBAL_H
+#define RC_FRAMEWORK_GLOBAL_H
+
+#include <QtCore/qglobal.h>
+
+#if defined(RC_TEMPLATE_LIBRARY)
+#  define RC_FRAMEWORKSHARED_EXPORT Q_DECL_EXPORT
+#else
+#  define RC_FRAMEWORKSHARED_EXPORT Q_DECL_IMPORT
+#endif
+
+#endif // RC_FRAMEWORK_GLOBAL_H

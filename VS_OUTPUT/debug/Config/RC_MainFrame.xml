@@ -1,0 +1,11 @@
+<Root>
+  <MenuType>TabMenu</MenuType>
+  <PageSwitchEvent>
+    <Item menuid ="00000" pagekey ="side1"/>
+    <Item menuid ="00001" pagekey ="side2"/>
+    <Item menuid ="00002" pagekey ="side3"/>
+    <Item menuid ="00003" pagekey ="side4"/>
+    <Item menuid ="00004" pagekey ="side5"/>
+    <Item menuid ="00005" pagekey ="side6"/>
+  </PageSwitchEvent>
+</Root>

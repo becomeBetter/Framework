@@ -1,0 +1,41 @@
+﻿生成启动时间为 2016/3/3 17:31:05。
+     1>项目“E:\Kean\Framework\RC_Framwork\RC_UI_MainFrame\RC_UI_MainFrame.vcxproj”在节点 2 上(build 个目标)。
+     1>InitializeBuildStatus:
+         正在创建“Win32\Debug\RC_UI_MainFrame.unsuccessfulbuild”，因为已指定“AlwaysCreate”。
+       CustomBuild:
+         所有输出均为最新。
+       ClCompile:
+         D:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /I..\RC_Global /I..\RC_Interface /ID:\Kean\tools\Qt\5.2.0\msvc2010_opengl\include /ID:\Kean\tools\Qt\5.2.0\msvc2010_opengl\include\QtWidgets /ID:\Kean\tools\Qt\5.2.0\msvc2010_opengl\include\QtXml /ID:\Kean\tools\Qt\5.2.0\msvc2010_opengl\include\QtGui /ID:\Kean\tools\Qt\5.2.0\msvc2010_opengl\include\QtCore /Idebug /I"D:\Kean\tools\Qt\5.2.0\msvc2010_opengl\mkspecs\win32-msvc2010" /I.\ /Zi /nologo /W3 /WX- /Od /Oy- /D _WINDOWS /D UNICODE /D WIN32 /D RC_TEMPLATE_LIBRARY /D QT_WIDGETS_LIB /D QT_XML_LIB /D QT_GUI_LIB /D QT_CORE_LIB /D _WINDLL /Gm- /EHsc /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /GR /Fo"Win32\Debug\\" /Fd"Win32\Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt CMainWindow.cpp -Zm200 -w34100 -w34189 
+         CMainWindow.cpp
+     1>CMainWindow.cpp : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>e:\kean\framework\rc_framwork\rc_ui_mainframe\CMainWindow.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>E:\Kean\Framework\RC_Framwork\RC_Global\CConfigBase.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>E:\Kean\Framework\RC_Framwork\RC_Interface\IModule.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+       Link:
+         D:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"../../VS_OUTPUT/debug\\RC_UI_MainFrame.dll" /NOLOGO /LIBPATH:D:\Kean\tools\Qt\5.2.0\msvc2010_opengl\lib /LIBPATH:D:\Kean\tools\Qt\5.2.0\msvc2010_opengl\lib glu32.lib opengl32.lib gdi32.lib user32.lib D:\Kean\tools\Qt\5.2.0\msvc2010_opengl\lib\Qt5Widgetsd.lib D:\Kean\tools\Qt\5.2.0\msvc2010_opengl\lib\Qt5Xmld.lib D:\Kean\tools\Qt\5.2.0\msvc2010_opengl\lib\Qt5Guid.lib D:\Kean\tools\Qt\5.2.0\msvc2010_opengl\lib\Qt5Cored.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"Win32\Debug\RC_UI_MainFrame.dll.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"E:\Kean\Framework\VS_OUTPUT\debug\RC_UI_MainFrame.pdb" /TLBID:1 /DYNAMICBASE /NXCOMPAT /MACHINE:X86 /DLL Win32\Debug\CConfig.obj
+         Win32\Debug\CConfigBase.obj
+         Win32\Debug\CMainWindow.obj
+         Win32\Debug\CModule.obj
+         Win32\Debug\CModuleBase.obj
+         Win32\Debug\CNoTitleBarDockWidget.obj
+         Win32\Debug\CService.obj
+         Win32\Debug\moc_CMainWindow.obj
+         Win32\Debug\moc_CNoTitleBarDockWidget.obj
+         LINK : 没有找到 ../../VS_OUTPUT/debug\\RC_UI_MainFrame.dll 或上一个增量链接没有生成它；正在执行完全链接
+            正在创建库 ../../VS_OUTPUT/debug\\RC_UI_MainFrame.lib 和对象 ../../VS_OUTPUT/debug\\RC_UI_MainFrame.exp
+         RC_UI_MainFrame.vcxproj -> E:\Kean\Framework\RC_Framwork\RC_UI_MainFrame\../../VS_OUTPUT/debug\RC_UI_MainFrame.dll
+       Manifest:
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /outputresource:"../../VS_OUTPUT/debug\\RC_UI_MainFrame.dll;#2" /manifest Win32\Debug\RC_UI_MainFrame.dll.intermediate.manifest
+       PostBuildEvent:
+         Description: Copy RC_UI_MainFrame.dll to ..\Debug
+         copy  "E:\Kean\Framework\RC_Framwork\RC_UI_MainFrame\../../VS_OUTPUT/debug\RC_UI_MainFrame.dll" "..\Debug"
+         :VCEnd
+         已复制         1 个文件。
+       FinalizeBuildStatus:
+         正在删除文件“Win32\Debug\RC_UI_MainFrame.unsuccessfulbuild”。
+         正在对“Win32\Debug\RC_UI_MainFrame.lastbuildstate”执行 Touch 任务。
+     1>已完成生成项目“E:\Kean\Framework\RC_Framwork\RC_UI_MainFrame\RC_UI_MainFrame.vcxproj”(build 个目标)的操作。
+
+生成成功。
+
+已用时间 00:00:01.55

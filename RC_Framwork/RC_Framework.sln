@@ -1,0 +1,58 @@
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "RC_Template", "RC_Template\RC_Template.vcxproj", "{32F3D9B1-DB30-37F5-860D-E37A80BDF383}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "RC_UI_Template", "RC_UI_Template\RC_UI_Template.vcxproj", "{B09C8B0C-A61F-3E75-B222-EF7B83277CBE}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "RC_Platform", "RC_Platform\RC_Platform.vcxproj", "{946E3FA4-C0CC-3913-92CA-BBF43AB11134}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "RC_Application", "RC_Application\RC_Application.vcxproj", "{12C8F7B6-C89B-3429-9669-59A0BE907769}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "RC_UI_MainFrame", "RC_UI_MainFrame\RC_UI_MainFrame.vcxproj", "{E8ECF25A-1A16-36FC-8896-3C72C2F92BC3}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "RC_UI_TabMenu", "RC_UI_TabMenu\RC_UI_TabMenu.vcxproj", "{DB707D0B-B475-332C-BC74-99FE31FBA017}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "RC_UI_Test", "RC_UI_Test\RC_UI_Test.vcxproj", "{79F5BE9D-DF1C-323A-B19A-45FF1E4B335C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{32F3D9B1-DB30-37F5-860D-E37A80BDF383}.Debug|Win32.ActiveCfg = Debug|Win32
+		{32F3D9B1-DB30-37F5-860D-E37A80BDF383}.Debug|Win32.Build.0 = Debug|Win32
+		{32F3D9B1-DB30-37F5-860D-E37A80BDF383}.Release|Win32.ActiveCfg = Release|Win32
+		{32F3D9B1-DB30-37F5-860D-E37A80BDF383}.Release|Win32.Build.0 = Release|Win32
+		{B09C8B0C-A61F-3E75-B222-EF7B83277CBE}.Debug|Win32.ActiveCfg = Debug|Win32
+		{B09C8B0C-A61F-3E75-B222-EF7B83277CBE}.Debug|Win32.Build.0 = Debug|Win32
+		{B09C8B0C-A61F-3E75-B222-EF7B83277CBE}.Release|Win32.ActiveCfg = Release|Win32
+		{B09C8B0C-A61F-3E75-B222-EF7B83277CBE}.Release|Win32.Build.0 = Release|Win32
+		{946E3FA4-C0CC-3913-92CA-BBF43AB11134}.Debug|Win32.ActiveCfg = Debug|Win32
+		{946E3FA4-C0CC-3913-92CA-BBF43AB11134}.Debug|Win32.Build.0 = Debug|Win32
+		{946E3FA4-C0CC-3913-92CA-BBF43AB11134}.Release|Win32.ActiveCfg = Release|Win32
+		{946E3FA4-C0CC-3913-92CA-BBF43AB11134}.Release|Win32.Build.0 = Release|Win32
+		{12C8F7B6-C89B-3429-9669-59A0BE907769}.Debug|Win32.ActiveCfg = Debug|Win32
+		{12C8F7B6-C89B-3429-9669-59A0BE907769}.Debug|Win32.Build.0 = Debug|Win32
+		{12C8F7B6-C89B-3429-9669-59A0BE907769}.Release|Win32.ActiveCfg = Release|Win32
+		{12C8F7B6-C89B-3429-9669-59A0BE907769}.Release|Win32.Build.0 = Release|Win32
+		{E8ECF25A-1A16-36FC-8896-3C72C2F92BC3}.Debug|Win32.ActiveCfg = Debug|Win32
+		{E8ECF25A-1A16-36FC-8896-3C72C2F92BC3}.Debug|Win32.Build.0 = Debug|Win32
+		{E8ECF25A-1A16-36FC-8896-3C72C2F92BC3}.Release|Win32.ActiveCfg = Release|Win32
+		{E8ECF25A-1A16-36FC-8896-3C72C2F92BC3}.Release|Win32.Build.0 = Release|Win32
+		{DB707D0B-B475-332C-BC74-99FE31FBA017}.Debug|Win32.ActiveCfg = Debug|Win32
+		{DB707D0B-B475-332C-BC74-99FE31FBA017}.Debug|Win32.Build.0 = Debug|Win32
+		{DB707D0B-B475-332C-BC74-99FE31FBA017}.Release|Win32.ActiveCfg = Release|Win32
+		{DB707D0B-B475-332C-BC74-99FE31FBA017}.Release|Win32.Build.0 = Release|Win32
+		{79F5BE9D-DF1C-323A-B19A-45FF1E4B335C}.Debug|Win32.ActiveCfg = Debug|Win32
+		{79F5BE9D-DF1C-323A-B19A-45FF1E4B335C}.Debug|Win32.Build.0 = Debug|Win32
+		{79F5BE9D-DF1C-323A-B19A-45FF1E4B335C}.Release|Win32.ActiveCfg = Release|Win32
+		{79F5BE9D-DF1C-323A-B19A-45FF1E4B335C}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		Qt5Version = 5.2.0
+	EndGlobalSection
+EndGlobal

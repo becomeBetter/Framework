@@ -1,0 +1,5 @@
+<Root>
+    <Theme>Config/skin/style.css</Theme>
+    <Platform>RC_Platform</Platform>
+    <MainFrame>RC_UI_MainFrame</MainFrame>
+</Root>

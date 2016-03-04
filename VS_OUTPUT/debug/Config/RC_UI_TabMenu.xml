@@ -1,0 +1,8 @@
+<Root>
+   <Item id="00000" text="主控界面" icon="Config/tabmenuicon/side1.png"/>
+   <Item id="00001" text="机器人管理" icon="Config/tabmenuicon/side2.png"/>
+   <Item id="00002" text="地图管理" icon="Config/tabmenuicon/side3.png"/>
+   <Item id="00003" text="参数设置" icon="Config/tabmenuicon/side4.png"/>
+   <Item id="00004" text="系统日志" icon="Config/tabmenuicon/side5.png"/>
+   <Item id="00005" text="关于软件" icon="Config/tabmenuicon/side6.png"/>
+</Root>
