@@ -3,7 +3,7 @@
 CConfig::CConfig():
     CConfigBase()
 {
-    m_strFilePath = "";
+    m_strFilePath = "Config";
 
     m_strFileName = "";
 }

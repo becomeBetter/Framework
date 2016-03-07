@@ -15,7 +15,7 @@ bool CModule::onInitialize()
 
     m_pConfig->parse("Root");
 
-    m_pMainWindow = new CMainWindow;
+    m_pMainWindow = new CMainWindow(m_pPlatform, m_pConfig);
 
     m_pMainWindow->onStartup();
 

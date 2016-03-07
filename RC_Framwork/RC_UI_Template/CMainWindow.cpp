@@ -1,16 +1,11 @@
 #include "CMainWindow.h"
+#include "CConfig.h"
 #include <QWidget>
 
-CMainWindow::CMainWindow(QWidget *parent) :
+CMainWindow::CMainWindow(IModule *platform, CConfig* config, QWidget *parent):
     QMainWindow(parent),
-    m_pPlatform(NULL)
-{
-	
-}
-
-CMainWindow::CMainWindow(IModule *platform, QWidget *parent):
-    QMainWindow(parent),
-    m_pPlatform(platform)
+    m_pPlatform(platform),
+	m_pConfig(config)
 {
     
 }

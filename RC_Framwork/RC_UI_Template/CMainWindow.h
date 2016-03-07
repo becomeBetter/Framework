@@ -3,13 +3,12 @@
 #include "IWidget.h"
 #include <QMainWindow>
 struct IModule;
+class CConfig;
 class CMainWindow : public QMainWindow, public IWidget
 {
     Q_OBJECT
 public:
-    explicit CMainWindow(QWidget *parent = 0);
-    
-    explicit CMainWindow(IModule* platform, QWidget *parent = 0);
+    explicit CMainWindow(IModule* platform, CConfig* config, QWidget *parent = 0);
 public:
     //获取UI
     QWidget* getUI();
@@ -23,7 +22,8 @@ private:
     //平台
     IModule*                    m_pPlatform;
 
-
+	//配置
+	CConfig*					m_pConfig;
 signals:
 
 public slots:

@@ -14,6 +14,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "RC_UI_TabMenu", "RC_UI_TabM
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "RC_UI_Test", "RC_UI_Test\RC_UI_Test.vcxproj", "{79F5BE9D-DF1C-323A-B19A-45FF1E4B335C}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "RC_UI_GIS", "RC_UI_GIS\RC_UI_GIS.vcxproj", "{12143A6F-0475-36FD-8151-B0D3F58D58A7}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Win32 = Debug|Win32
@@ -48,6 +50,10 @@ Global
 		{79F5BE9D-DF1C-323A-B19A-45FF1E4B335C}.Debug|Win32.Build.0 = Debug|Win32
 		{79F5BE9D-DF1C-323A-B19A-45FF1E4B335C}.Release|Win32.ActiveCfg = Release|Win32
 		{79F5BE9D-DF1C-323A-B19A-45FF1E4B335C}.Release|Win32.Build.0 = Release|Win32
+		{12143A6F-0475-36FD-8151-B0D3F58D58A7}.Debug|Win32.ActiveCfg = Debug|Win32
+		{12143A6F-0475-36FD-8151-B0D3F58D58A7}.Debug|Win32.Build.0 = Debug|Win32
+		{12143A6F-0475-36FD-8151-B0D3F58D58A7}.Release|Win32.ActiveCfg = Release|Win32
+		{12143A6F-0475-36FD-8151-B0D3F58D58A7}.Release|Win32.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
