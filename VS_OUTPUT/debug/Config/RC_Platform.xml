@@ -3,7 +3,8 @@
   <Item key="side1" value="RC_UI_Test"/>
   <Item key="side2" value="RC_UI_Test"/>
   <Item key="side3" value="RC_UI_GIS"/>
-  <Item key="side4" value="RC_UI_Test"/>
+  <Item key="side4" value="RC_UI_GIS"/>
+  <Item key="tcpserver" value="RC_DTL_TCPServer"/>
   <Item key="side5" value="RC_UI_Test"/>
-  <Item key="side6" value="RC_UI_Test"/>
+  <Item key="side6" value="RC_UI_TestTcpServer"/>
 </Root>

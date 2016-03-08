@@ -17,8 +17,6 @@ bool CModule::onInitialize()
 
     m_pMainWindow = new CMainWindow(m_pPlatform, m_pConfig);
 
-    m_pMainWindow->onStartup();
-
     return true;
 }
 
@@ -44,6 +42,7 @@ bool CModule::onUnInitialize()
 
 bool CModule::onStartup()
 {
+	 m_pMainWindow->onStartup();
 
     return true;
 }

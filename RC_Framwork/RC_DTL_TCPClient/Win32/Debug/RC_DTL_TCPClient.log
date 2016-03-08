@@ -1,0 +1,37 @@
+﻿生成启动时间为 2016/3/8 18:17:42。
+     1>项目“E:\Kean\Project\Framework\RC_Framwork\RC_DTL_TCPClient\RC_DTL_TCPClient.vcxproj”在节点 2 上(build 个目标)。
+     1>InitializeBuildStatus:
+         正在创建“Win32\Debug\RC_DTL_TCPClient.unsuccessfulbuild”，因为已指定“AlwaysCreate”。
+       CustomBuild:
+         所有输出均为最新。
+       ClCompile:
+         D:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /I..\RC_Global /I..\RC_Interface /ID:\Kean\tools\Qt\5.2.0\msvc2010_opengl\include /ID:\Kean\tools\Qt\5.2.0\msvc2010_opengl\include\QtXml /ID:\Kean\tools\Qt\5.2.0\msvc2010_opengl\include\QtCore /Idebug /I"D:\Kean\tools\Qt\5.2.0\msvc2010_opengl\mkspecs\win32-msvc2010" /ID:\Kean\tools\Qt\5.2.0\msvc2010_opengl\include\QtNetwork /Zi /nologo /W3 /WX- /Od /Oy- /D _WINDOWS /D UNICODE /D WIN32 /D RC_TEMPLATE_LIBRARY /D QT_XML_LIB /D QT_CORE_LIB /D QT_NETWORK_LIB /D _WINDLL /Gm- /EHsc /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /GR /Fo"Win32\Debug\\" /Fd"Win32\Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt CTcpClient.cpp -Zm200 -w34100 -w34189 
+         CTcpClient.cpp
+     1>CTcpClient.cpp(54): warning C4018: “>=”: 有符号/无符号不匹配
+     1>CTcpClient.cpp(64): warning C4018: “<”: 有符号/无符号不匹配
+       Link:
+         D:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"../../VS_OUTPUT/debug\\RC_DTL_TCPClient.dll" /NOLOGO /LIBPATH:D:\Kean\tools\Qt\5.2.0\msvc2010_opengl\lib /LIBPATH:D:\Kean\tools\Qt\5.2.0\msvc2010_opengl\lib D:\Kean\tools\Qt\5.2.0\msvc2010_opengl\lib\Qt5Xmld.lib D:\Kean\tools\Qt\5.2.0\msvc2010_opengl\lib\Qt5Cored.lib Qt5Networkd.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"Win32\Debug\RC_DTL_TCPClient.dll.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"E:\Kean\Project\Framework\VS_OUTPUT\debug\RC_DTL_TCPClient.pdb" /TLBID:1 /DYNAMICBASE /NXCOMPAT /MACHINE:X86 /DLL Win32\Debug\CConfig.obj
+         Win32\Debug\CConfigBase.obj
+         Win32\Debug\CModule.obj
+         Win32\Debug\CModuleBase.obj
+         Win32\Debug\CService.obj
+         Win32\Debug\CTcpClient.obj
+         Win32\Debug\moc_CTcpClient.obj
+         LINK : 没有找到 ../../VS_OUTPUT/debug\\RC_DTL_TCPClient.dll 或上一个增量链接没有生成它；正在执行完全链接
+            正在创建库 ../../VS_OUTPUT/debug\\RC_DTL_TCPClient.lib 和对象 ../../VS_OUTPUT/debug\\RC_DTL_TCPClient.exp
+         RC_DTL_TCPClient.vcxproj -> E:\Kean\Project\Framework\RC_Framwork\RC_DTL_TCPClient\../../VS_OUTPUT/debug\RC_DTL_TCPClient.dll
+       Manifest:
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /outputresource:"../../VS_OUTPUT/debug\\RC_DTL_TCPClient.dll;#2" /manifest Win32\Debug\RC_DTL_TCPClient.dll.intermediate.manifest
+       PostBuildEvent:
+         Description: Copy RC_DTL_TCPClient.dll to ..\Debug
+         copy  "E:\Kean\Project\Framework\RC_Framwork\RC_DTL_TCPClient\../../VS_OUTPUT/debug\RC_DTL_TCPClient.dll" "..\Debug"
+         :VCEnd
+         已复制         1 个文件。
+       FinalizeBuildStatus:
+         正在删除文件“Win32\Debug\RC_DTL_TCPClient.unsuccessfulbuild”。
+         正在对“Win32\Debug\RC_DTL_TCPClient.lastbuildstate”执行 Touch 任务。
+     1>已完成生成项目“E:\Kean\Project\Framework\RC_Framwork\RC_DTL_TCPClient\RC_DTL_TCPClient.vcxproj”(build 个目标)的操作。
+
+生成成功。
+
+已用时间 00:00:01.41

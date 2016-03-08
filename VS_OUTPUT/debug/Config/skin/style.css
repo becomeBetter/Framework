@@ -19,3 +19,7 @@ QToolButton:hover
      background-color:black;
      color:White;
  }
+ QTextBrowser
+ {
+	 color:black;
+ }

@@ -1,0 +1,72 @@
+﻿生成启动时间为 2016/3/8 17:26:59。
+     1>项目“E:\Kean\Project\Framework\RC_Framwork\RC_DTL_TCPServer\RC_DTL_TCPServer.vcxproj”在节点 2 上(build 个目标)。
+     1>InitializeBuildStatus:
+         正在对“Win32\Debug\RC_DTL_TCPServer.unsuccessfulbuild”执行 Touch 任务。
+       CustomBuild:
+         Moc'ing CWorkThread.h...
+         Moc'ing CTcpServer.h...
+       ClCompile:
+         D:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /I..\RC_Global /I..\RC_Interface /ID:\Kean\tools\Qt\5.2.0\msvc2010_opengl\include /ID:\Kean\tools\Qt\5.2.0\msvc2010_opengl\include\QtXml /ID:\Kean\tools\Qt\5.2.0\msvc2010_opengl\include\QtCore /Idebug /I"D:\Kean\tools\Qt\5.2.0\msvc2010_opengl\mkspecs\win32-msvc2010" /ID:\Kean\tools\Qt\5.2.0\msvc2010_opengl\include\QtNetwork /I.\ /Zi /nologo /W3 /WX- /Od /Oy- /D _WINDOWS /D UNICODE /D WIN32 /D RC_TEMPLATE_LIBRARY /D QT_XML_LIB /D QT_CORE_LIB /D QT_NETWORK_LIB /D _WINDLL /Gm- /EHsc /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /GR /Fo"Win32\Debug\\" /Fd"Win32\Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt CConfig.cpp ..\RC_Global\CConfigBase.cpp CModule.cpp ..\RC_Global\CModuleBase.cpp CService.cpp CTcpServer.cpp CWorkThread.cpp GeneratedFiles\Debug\moc_CTcpServer.cpp GeneratedFiles\Debug\moc_CWorkThread.cpp -Zm200 -w34100 -w34189 
+         CConfig.cpp
+     1>E:\Kean\Project\Framework\RC_Framwork\RC_Global\CConfigBase.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+         CConfigBase.cpp
+     1>e:\kean\project\framework\rc_framwork\rc_global\CConfigBase.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>..\RC_Global\CConfigBase.cpp(45): warning C4100: “root”: 未引用的形参
+         CModule.cpp
+     1>e:\kean\project\framework\rc_framwork\rc_dtl_tcpserver\CModule.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>E:\Kean\Project\Framework\RC_Framwork\RC_Global\CModuleBase.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>E:\Kean\Project\Framework\RC_Framwork\RC_Interface\IModule.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>E:\Kean\Project\Framework\RC_Framwork\RC_Global\CConfigBase.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+         CModuleBase.cpp
+     1>e:\kean\project\framework\rc_framwork\rc_global\CModuleBase.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>E:\Kean\Project\Framework\RC_Framwork\RC_Interface\IModule.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>e:\kean\project\framework\rc_framwork\rc_global\EComponentType.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>..\RC_Global\CModuleBase.cpp(92): warning C4100: “interface”: 未引用的形参
+     1>..\RC_Global\CModuleBase.cpp(92): warning C4100: “uiid”: 未引用的形参
+         CService.cpp
+     1>CService.cpp : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>e:\kean\project\framework\rc_framwork\rc_dtl_tcpserver\CService.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>E:\Kean\Project\Framework\RC_Framwork\RC_Interface\IService.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>e:\kean\project\framework\rc_framwork\rc_dtl_tcpserver\CService.h(4): warning C4099: “IModule”: 类型名称以前使用“class”现在使用的是“struct”
+                 E:\Kean\Project\Framework\RC_Framwork\RC_Interface\IService.h(4) : 参见“IModule”的声明
+     1>e:\kean\project\framework\rc_framwork\rc_dtl_tcpserver\CModule.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>E:\Kean\Project\Framework\RC_Framwork\RC_Global\CModuleBase.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>E:\Kean\Project\Framework\RC_Framwork\RC_Interface\IModule.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>E:\Kean\Project\Framework\RC_Framwork\RC_Interface\IModule.h(5): warning C4099: “IModule”: 类型名称以前使用“class”现在使用的是“struct”
+                 E:\Kean\Project\Framework\RC_Framwork\RC_Interface\IService.h(4) : 参见“IModule”的声明
+     1>E:\Kean\Project\Framework\RC_Framwork\RC_Global\CConfigBase.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>E:\Kean\Project\Framework\RC_Framwork\RC_Global\EComponentType.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>CService.cpp(16): warning C4100: “param”: 未引用的形参
+         CTcpServer.cpp
+         CWorkThread.cpp
+     1>E:\Kean\Project\Framework\RC_Framwork\RC_Global\CConfigBase.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+         moc_CTcpServer.cpp
+         moc_CWorkThread.cpp
+         正在生成代码...
+       Link:
+         D:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"../../VS_OUTPUT/debug\\RC_DTL_TCPServer.dll" /NOLOGO /LIBPATH:D:\Kean\tools\Qt\5.2.0\msvc2010_opengl\lib /LIBPATH:D:\Kean\tools\Qt\5.2.0\msvc2010_opengl\lib D:\Kean\tools\Qt\5.2.0\msvc2010_opengl\lib\Qt5Xmld.lib D:\Kean\tools\Qt\5.2.0\msvc2010_opengl\lib\Qt5Cored.lib Qt5Networkd.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"Win32\Debug\RC_DTL_TCPServer.dll.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"E:\Kean\Project\Framework\VS_OUTPUT\debug\RC_DTL_TCPServer.pdb" /TLBID:1 /DYNAMICBASE /NXCOMPAT /MACHINE:X86 /DLL Win32\Debug\CConfig.obj
+         Win32\Debug\CConfigBase.obj
+         Win32\Debug\CModule.obj
+         Win32\Debug\CModuleBase.obj
+         Win32\Debug\CService.obj
+         Win32\Debug\CTcpServer.obj
+         Win32\Debug\CWorkThread.obj
+         Win32\Debug\moc_CTcpServer.obj
+         Win32\Debug\moc_CWorkThread.obj
+            正在创建库 ../../VS_OUTPUT/debug\\RC_DTL_TCPServer.lib 和对象 ../../VS_OUTPUT/debug\\RC_DTL_TCPServer.exp
+         RC_DTL_TCPServer.vcxproj -> E:\Kean\Project\Framework\RC_Framwork\RC_DTL_TCPServer\../../VS_OUTPUT/debug\RC_DTL_TCPServer.dll
+       Manifest:
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /outputresource:"../../VS_OUTPUT/debug\\RC_DTL_TCPServer.dll;#2" /manifest Win32\Debug\RC_DTL_TCPServer.dll.intermediate.manifest
+       PostBuildEvent:
+         Description: Copy RC_DTL_TCPServer.dll to ..\Debug
+         copy  "E:\Kean\Project\Framework\RC_Framwork\RC_DTL_TCPServer\../../VS_OUTPUT/debug\RC_DTL_TCPServer.dll" "..\Debug"
+         :VCEnd
+         已复制         1 个文件。
+       FinalizeBuildStatus:
+         正在删除文件“Win32\Debug\RC_DTL_TCPServer.unsuccessfulbuild”。
+         正在对“Win32\Debug\RC_DTL_TCPServer.lastbuildstate”执行 Touch 任务。
+     1>已完成生成项目“E:\Kean\Project\Framework\RC_Framwork\RC_DTL_TCPServer\RC_DTL_TCPServer.vcxproj”(build 个目标)的操作。
+
+生成成功。
+
+已用时间 00:00:05.39

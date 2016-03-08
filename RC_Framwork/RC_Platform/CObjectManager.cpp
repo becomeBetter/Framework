@@ -36,6 +36,7 @@ void CObjectManager::onStartup()
         {
             continue;
         }
+
         //添加到列表
         m_mapObjects.insert(std::map<std::string, IModule*>::value_type(iter->first, pModule));
 

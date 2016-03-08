@@ -18,8 +18,6 @@ bool CModule::onInitialize()
 
     m_pObjectManger = new CObjectManager(this, m_pConfig);
 
-    m_pObjectManger->onStartup();
-
     return true;
 }
 
@@ -45,6 +43,7 @@ bool CModule::onUnInitialize()
 
 bool CModule::onStartup()
 {
+	m_pObjectManger->onStartup();
 
     return true;
 }
