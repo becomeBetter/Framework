@@ -15,6 +15,12 @@ struct IModule
     //关闭
     virtual bool shutdown() = 0;
 
+	//获取key
+	virtual std::string key() const = 0;
+
+	//获取状态 
+	virtual unsigned int status() const = 0;
+
     //接口查询
     virtual bool query(const std::string& uiid, void** interface) = 0;
 };

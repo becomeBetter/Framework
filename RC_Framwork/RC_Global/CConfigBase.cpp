@@ -8,7 +8,7 @@ CConfigBase::CConfigBase()
  
 }
 //Ω‚Œˆ≈‰÷√
-bool CConfigBase::parse(const std::string& rootkey)
+bool CConfigBase::parse(const std::string& rootkey, const std::string& inskey)
 {
     bool bRet = false;
 
@@ -34,7 +34,24 @@ bool CConfigBase::parse(const std::string& rootkey)
             break;
         }
 
-        onParse(root);
+		if (inskey.empty())
+		{
+			onParse(root);
+
+			bRet = true;
+
+			break;
+		}
+
+		QDomElement instance = root.firstChildElement(QString::fromStdString(inskey));
+
+		if (!instance.isElement())
+		{
+			break;
+		}else
+		{
+			onParse(instance);
+		}
 
         bRet = true;
    }while(0);

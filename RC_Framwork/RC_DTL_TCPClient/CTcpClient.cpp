@@ -1,5 +1,5 @@
 #include "CTcpClient.h"
-
+#include "ITcpDataWatcher.h"
 #include <QHostAddress>
 CTcpClient::CTcpClient(QObject* parent):
 QObject(parent)
@@ -73,9 +73,34 @@ int CTcpClient::readData(char* buffer, unsigned int size)
 		return 0;
 	}
 }
+//观察者注册
+bool CTcpClient::registry(ITcpDataWatcher* watcher)
+{
+	m_vecWatchers.append(watcher);
 
+	return true;
+}
+
+//观察者取消注册
+bool CTcpClient::unRegistry(ITcpDataWatcher* watcher)
+{
+	m_vecWatchers.remove(m_vecWatchers.indexOf(watcher));
+
+	return true;
+}
 //响应数据到来
 void CTcpClient::slotForDataComing()
 {
-	m_objRecvData.append(m_pClient->readAll());
+	if (m_vecWatchers.size() > 0)//有观察者注册，则调用观察者通知函数
+	{
+		int iSize = m_vecWatchers.size();
+
+		for (int i = 0; i < iSize; ++i)
+		{
+			m_vecWatchers.at(i)->tcpDataComingNotify(m_pClient->readAll(), (void*)sender());
+		}
+	}else
+	{
+		m_objRecvData.append(m_pClient->readAll());
+	}
 }

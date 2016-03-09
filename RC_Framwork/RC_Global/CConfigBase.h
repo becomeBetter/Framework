@@ -9,7 +9,7 @@ public:
     CConfigBase();
 public:
     //解析
-    bool parse(const std::string& rootkey);
+    bool parse(const std::string& rootkey, const std::string& inskey = "");
 public:
     virtual bool onParse(const QDomElement& root);
 public:

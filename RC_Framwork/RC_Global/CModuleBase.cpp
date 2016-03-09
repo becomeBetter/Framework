@@ -6,7 +6,7 @@ CModuleBase::CModuleBase(const std::string &key):
 {
 
 }
-
+//初始化
 bool CModuleBase::initialize()
 {
     if(RC_Framework::EMS_UNINITIALIZED ==  m_iStatus)
@@ -27,6 +27,7 @@ bool CModuleBase::initialize()
     return m_iStatus ==  RC_Framework::EMS_INITIALIZED;
 }
 
+//反初始化
 bool CModuleBase::unInitialize()
 {
 
@@ -38,6 +39,7 @@ bool CModuleBase::unInitialize()
     return false;
 }
 
+//启动
 bool CModuleBase::startup()
 {
     if(m_iStatus != RC_Framework::EMS_INITIALIZED)
@@ -48,6 +50,7 @@ bool CModuleBase::startup()
     return onStartup();
 }
 
+//关闭
 bool CModuleBase::shutdown()
 {
     if(m_iStatus != RC_Framework::EMS_INITIALIZED)
@@ -58,6 +61,18 @@ bool CModuleBase::shutdown()
     return onShutdown();
 }
 
+//获取key
+std::string CModuleBase::key() const
+{
+	return m_strKey;
+}
+
+//获取状态 
+unsigned int CModuleBase::status() const
+{
+	return m_iStatus;
+}
+//接口查询
 bool CModuleBase::query(const std::string &uiid, void **interface)
 {
     if(m_iStatus != RC_Framework::EMS_INITIALIZED)

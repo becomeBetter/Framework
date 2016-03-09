@@ -1,7 +1,7 @@
 #ifndef ISERVICE_H
 #define ISERVICE_H
 #include <string>
-class IModule;
+struct IModule;
 struct IService
 {
     //组件类型

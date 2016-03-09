@@ -19,6 +19,12 @@ public:
     //关闭
     bool shutdown();
 
+	//获取key
+	std::string key() const;
+
+	//获取状态 
+	unsigned int status() const;
+
     //接口查询
     bool query(const std::string& uiid, void** interface);
 public:
@@ -36,7 +42,7 @@ public:
 
     //接口查询事件
     virtual bool onQuery(const std::string &uiid, void **interface);
-private:
+public:
     //模块标识
     std::string             m_strKey;
 

@@ -50,7 +50,11 @@ bool CModule::onQuery(const std::string &uiid, void **interface)
 	if(IID_TCP_CLIENT == uiid)
 	{
 		*interface = static_cast<ITcpClient*>(m_pClient);
-	}else
+	}else if (IID_TCP_SERVICE == uiid)
+	{
+		*interface = static_cast<ITcpService*>(m_pClient);
+	}
+	else
 	{
 		bRet = false;
 	}
