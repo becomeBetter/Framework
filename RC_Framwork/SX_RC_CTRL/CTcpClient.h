@@ -45,6 +45,7 @@ private:
 
 	//观察者列表
 	QVector<ITcpDataWatcher*>		m_vecWatchers;
+
 private slots:
 	//响应数据到来
 	void slotForDataComing();

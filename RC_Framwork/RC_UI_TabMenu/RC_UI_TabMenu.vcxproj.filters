@@ -26,12 +26,12 @@
       <Extensions>cpp;c;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
     </Filter>
     <Filter Include="Generated Files\Release">
-      <UniqueIdentifier>{10d97e53-4ce6-4e8f-98b7-cc6988c22aa8}</UniqueIdentifier>
+      <UniqueIdentifier>{740e0b87-bdff-4874-b2a3-c467e98b0ef7}</UniqueIdentifier>
       <Extensions>cpp;moc</Extensions>
       <SourceControlFiles>False</SourceControlFiles>
     </Filter>
     <Filter Include="Generated Files\Debug">
-      <UniqueIdentifier>{0d6a2246-7734-4d63-bed6-20410ccdd233}</UniqueIdentifier>
+      <UniqueIdentifier>{6bada8ef-189b-43d0-9580-915f69f3f4de}</UniqueIdentifier>
       <Extensions>cpp;moc</Extensions>
       <SourceControlFiles>False</SourceControlFiles>
     </Filter>
@@ -104,9 +104,6 @@
     </ClInclude>
     <ClInclude Include="..\RC_Interface\IWidget.h">
       <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="..\RC_Interface\ITabMenu.h">
-      <Filter>Generated Files</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

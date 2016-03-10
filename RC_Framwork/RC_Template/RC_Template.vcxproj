@@ -11,7 +11,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{32F3D9B1-DB30-37F5-860D-E37A80BDF383}</ProjectGuid>
+    <ProjectGuid>{239D05AC-0809-35BC-AFF7-AC7BE5EFF5F6}</ProjectGuid>
     <RootNamespace>RC_Template</RootNamespace>
     <Keyword>Qt4VSv1.0</Keyword>
   </PropertyGroup>
@@ -56,11 +56,10 @@
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <ClCompile>
-      <AdditionalIncludeDirectories>"..\RC_Global";"..\RC_Interface";"D:\Kean\tools\Qt\5.2.0\msvc2010_opengl\include";"D:\Kean\tools\Qt\5.2.0\msvc2010_opengl\include\QtXml";"D:\Kean\tools\Qt\5.2.0\msvc2010_opengl\include\QtCore";"release";D:\Kean\tools\Qt\5.2.0\msvc2010_opengl\mkspecs\win32-msvc2010;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <AdditionalOptions>-Zm200 -w34100 -w34189 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>.;..\RC_Global;..\RC_Interface;D:\kean\tools\qt5.5.1\5.5\msvc2010\include;D:\kean\tools\qt5.5.1\5.5\msvc2010\include\QtXml;D:\kean\tools\qt5.5.1\5.5\msvc2010\include\QtCore;release;D:\kean\tools\qt5.5.1\5.5\msvc2010\mkspecs\win32-msvc2010;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>-w34100 -w34189 -w44996 %(AdditionalOptions)</AdditionalOptions>
       <AssemblerListingLocation>release\</AssemblerListingLocation>
       <BrowseInformation>false</BrowseInformation>
-      <DebugInformationFormat>None</DebugInformationFormat>
       <ExceptionHandling>Sync</ExceptionHandling>
       <ObjectFileName>$(IntDir)</ObjectFileName>
       <Optimization>MaxSpeed</Optimization>
@@ -75,7 +74,7 @@
     </ClCompile>
     <Link>
       <AdditionalDependencies>$(QTDIR)\lib\Qt5Xml.lib;$(QTDIR)\lib\Qt5Core.lib;%(AdditionalDependencies)</AdditionalDependencies>
-      <AdditionalLibraryDirectories>$(QTDIR)\lib;D:\Kean\tools\Qt\5.2.0\msvc2010_opengl\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>$(QTDIR)\lib;D:\kean\tools\qt5.5.1\5.5\msvc2010\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <DataExecutionPrevention>true</DataExecutionPrevention>
       <GenerateDebugInformation>false</GenerateDebugInformation>
       <IgnoreImportLibrary>true</IgnoreImportLibrary>
@@ -83,6 +82,7 @@
       <LinkIncremental>false</LinkIncremental>
       <OutputFile>$(OutDir)\RC_Template.dll</OutputFile>
       <RandomizedBaseAddress>true</RandomizedBaseAddress>
+      <SubSystem>Windows</SubSystem>
       <SuppressStartupBanner>true</SuppressStartupBanner>
     </Link>
     <Midl>
@@ -94,14 +94,14 @@
       <PreprocessorDefinitions>_WINDOWS;UNICODE;WIN32;RC_TEMPLATE_LIBRARY;QT_NO_DEBUG;QT_XML_LIB;QT_CORE_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
     </ResourceCompile>
     <PostBuildEvent>
-      <Command>copy  "$(TargetPath)" "..\Debug"</Command>
+      <Command>copy "$(TargetPath)" ..\Debug</Command>
       <Message>Copy RC_Template.dll to ..\Debug</Message>
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
-      <AdditionalIncludeDirectories>"..\RC_Global";"..\RC_Interface";"D:\Kean\tools\Qt\5.2.0\msvc2010_opengl\include";"D:\Kean\tools\Qt\5.2.0\msvc2010_opengl\include\QtXml";"D:\Kean\tools\Qt\5.2.0\msvc2010_opengl\include\QtCore";"debug";D:\Kean\tools\Qt\5.2.0\msvc2010_opengl\mkspecs\win32-msvc2010;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <AdditionalOptions>-Zm200 -w34100 -w34189 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>.;..\RC_Global;..\RC_Interface;D:\kean\tools\qt5.5.1\5.5\msvc2010\include;D:\kean\tools\qt5.5.1\5.5\msvc2010\include\QtXml;D:\kean\tools\qt5.5.1\5.5\msvc2010\include\QtCore;debug;D:\kean\tools\qt5.5.1\5.5\msvc2010\mkspecs\win32-msvc2010;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>-w34100 -w34189 -w44996 %(AdditionalOptions)</AdditionalOptions>
       <AssemblerListingLocation>debug\</AssemblerListingLocation>
       <BrowseInformation>false</BrowseInformation>
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
@@ -119,13 +119,14 @@
     </ClCompile>
     <Link>
       <AdditionalDependencies>$(QTDIR)\lib\Qt5Xmld.lib;$(QTDIR)\lib\Qt5Cored.lib;%(AdditionalDependencies)</AdditionalDependencies>
-      <AdditionalLibraryDirectories>$(QTDIR)\lib;D:\Kean\tools\Qt\5.2.0\msvc2010_opengl\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>$(QTDIR)\lib;D:\kean\tools\qt5.5.1\5.5\msvc2010\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <DataExecutionPrevention>true</DataExecutionPrevention>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <IgnoreImportLibrary>true</IgnoreImportLibrary>
       <LinkDLL>true</LinkDLL>
       <OutputFile>$(OutDir)\RC_Template.dll</OutputFile>
       <RandomizedBaseAddress>true</RandomizedBaseAddress>
+      <SubSystem>Windows</SubSystem>
       <SuppressStartupBanner>true</SuppressStartupBanner>
     </Link>
     <Midl>
@@ -137,7 +138,7 @@
       <PreprocessorDefinitions>_WINDOWS;UNICODE;WIN32;RC_TEMPLATE_LIBRARY;QT_XML_LIB;QT_CORE_LIB;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
     </ResourceCompile>
     <PostBuildEvent>
-      <Command>copy  "$(TargetPath)" "..\Debug"</Command>
+      <Command>copy "$(TargetPath)" ..\Debug</Command>
       <Message>Copy RC_Template.dll to ..\Debug</Message>
     </PostBuildEvent>
   </ItemDefinitionGroup>
@@ -161,7 +162,7 @@
   <ImportGroup Label="ExtensionTargets" />
   <ProjectExtensions>
     <VisualStudio>
-      <UserProperties Qt5Version_x0020_Win32="5.2.0" UicDir=".\GeneratedFiles" RccDir=".\GeneratedFiles" />
+      <UserProperties Qt5Version_x0020_Win32="5.5.1" UicDir=".\GeneratedFiles" RccDir=".\GeneratedFiles" />
     </VisualStudio>
   </ProjectExtensions>
 </Project>

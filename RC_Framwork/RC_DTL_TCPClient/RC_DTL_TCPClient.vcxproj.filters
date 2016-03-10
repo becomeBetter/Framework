@@ -23,12 +23,12 @@
       <ParseFiles>true</ParseFiles>
     </Filter>
     <Filter Include="Generated Files\Release">
-      <UniqueIdentifier>{da7cc04f-727f-4d77-9ce3-38ae74400d8f}</UniqueIdentifier>
+      <UniqueIdentifier>{3b1dea1c-ca3a-4cad-8a81-7e74b2c401ee}</UniqueIdentifier>
       <Extensions>cpp;moc</Extensions>
       <SourceControlFiles>False</SourceControlFiles>
     </Filter>
     <Filter Include="Generated Files\Debug">
-      <UniqueIdentifier>{2c172bbe-50ca-433d-b832-7c1f94fbd4cf}</UniqueIdentifier>
+      <UniqueIdentifier>{d0a42420-b351-4a3c-b7ba-ff2edfb27858}</UniqueIdentifier>
       <Extensions>cpp;moc</Extensions>
       <SourceControlFiles>False</SourceControlFiles>
     </Filter>
@@ -79,9 +79,6 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="..\RC_Interface\IConfig.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="..\RC_Interface\ITcpClient.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

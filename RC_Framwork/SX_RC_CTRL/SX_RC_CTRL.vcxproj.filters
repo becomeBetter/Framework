@@ -23,12 +23,12 @@
       <ParseFiles>true</ParseFiles>
     </Filter>
     <Filter Include="Generated Files\Release">
-      <UniqueIdentifier>{21f92ada-7754-4af6-88cd-675649966034}</UniqueIdentifier>
+      <UniqueIdentifier>{b8dc6281-cac3-46e6-9b99-ea363773e55d}</UniqueIdentifier>
       <Extensions>cpp;moc</Extensions>
       <SourceControlFiles>False</SourceControlFiles>
     </Filter>
     <Filter Include="Generated Files\Debug">
-      <UniqueIdentifier>{82a21e20-3e6d-41e1-88ae-7c979f91a3e5}</UniqueIdentifier>
+      <UniqueIdentifier>{a943bd70-038f-48e3-bc1b-6607e96e16a5}</UniqueIdentifier>
       <Extensions>cpp;moc</Extensions>
       <SourceControlFiles>False</SourceControlFiles>
     </Filter>

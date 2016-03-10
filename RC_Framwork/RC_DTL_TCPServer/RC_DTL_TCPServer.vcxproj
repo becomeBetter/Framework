@@ -56,11 +56,10 @@
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <ClCompile>
-      <AdditionalIncludeDirectories>..\RC_Global;..\RC_Interface;D:\Kean\tools\Qt\5.2.0\msvc2010_opengl\include;D:\Kean\tools\Qt\5.2.0\msvc2010_opengl\include\QtXml;D:\Kean\tools\Qt\5.2.0\msvc2010_opengl\include\QtCore;release;D:\Kean\tools\Qt\5.2.0\msvc2010_opengl\mkspecs\win32-msvc2010;$(QTDIR)\include\QtNetwork;.\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <AdditionalOptions>-Zm200 -w34100 -w34189 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>.;..\RC_Global;..\RC_Interface;D:\kean\tools\qt5.5.1\5.5\msvc2010\include;D:\kean\tools\qt5.5.1\5.5\msvc2010\include\QtXml;D:\kean\tools\qt5.5.1\5.5\msvc2010\include\QtCore;release;D:\kean\tools\qt5.5.1\5.5\msvc2010\mkspecs\win32-msvc2010;$(QTDIR)\include\QtNetwork;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>-w34100 -w34189 -w44996 %(AdditionalOptions)</AdditionalOptions>
       <AssemblerListingLocation>release\</AssemblerListingLocation>
       <BrowseInformation>false</BrowseInformation>
-      <DebugInformationFormat>None</DebugInformationFormat>
       <ExceptionHandling>Sync</ExceptionHandling>
       <ObjectFileName>$(IntDir)</ObjectFileName>
       <Optimization>MaxSpeed</Optimization>
@@ -75,7 +74,7 @@
     </ClCompile>
     <Link>
       <AdditionalDependencies>$(QTDIR)\lib\Qt5Xml.lib;$(QTDIR)\lib\Qt5Core.lib;Qt5Network.lib;%(AdditionalDependencies)</AdditionalDependencies>
-      <AdditionalLibraryDirectories>$(QTDIR)\lib;D:\Kean\tools\Qt\5.2.0\msvc2010_opengl\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>$(QTDIR)\lib;D:\kean\tools\qt5.5.1\5.5\msvc2010\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <DataExecutionPrevention>true</DataExecutionPrevention>
       <GenerateDebugInformation>false</GenerateDebugInformation>
       <IgnoreImportLibrary>true</IgnoreImportLibrary>
@@ -83,6 +82,7 @@
       <LinkIncremental>false</LinkIncremental>
       <OutputFile>$(OutDir)\RC_DTL_TCPServer.dll</OutputFile>
       <RandomizedBaseAddress>true</RandomizedBaseAddress>
+      <SubSystem>Windows</SubSystem>
       <SuppressStartupBanner>true</SuppressStartupBanner>
     </Link>
     <Midl>
@@ -94,14 +94,14 @@
       <PreprocessorDefinitions>_WINDOWS;UNICODE;WIN32;RC_TEMPLATE_LIBRARY;QT_NO_DEBUG;QT_XML_LIB;QT_CORE_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
     </ResourceCompile>
     <PostBuildEvent>
-      <Command>copy  "$(TargetPath)" "..\Debug"</Command>
+      <Command>copy "$(TargetPath)" ..\Debug</Command>
       <Message>Copy RC_DTL_TCPServer.dll to ..\Debug</Message>
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
-      <AdditionalIncludeDirectories>..\RC_Global;..\RC_Interface;D:\Kean\tools\Qt\5.2.0\msvc2010_opengl\include;D:\Kean\tools\Qt\5.2.0\msvc2010_opengl\include\QtXml;D:\Kean\tools\Qt\5.2.0\msvc2010_opengl\include\QtCore;debug;D:\Kean\tools\Qt\5.2.0\msvc2010_opengl\mkspecs\win32-msvc2010;$(QTDIR)\include\QtNetwork;.\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <AdditionalOptions>-Zm200 -w34100 -w34189 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>.;..\RC_Global;..\RC_Interface;D:\kean\tools\qt5.5.1\5.5\msvc2010\include;D:\kean\tools\qt5.5.1\5.5\msvc2010\include\QtXml;D:\kean\tools\qt5.5.1\5.5\msvc2010\include\QtCore;debug;D:\kean\tools\qt5.5.1\5.5\msvc2010\mkspecs\win32-msvc2010;$(QTDIR)\include\QtNetwork;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>-w34100 -w34189 -w44996 %(AdditionalOptions)</AdditionalOptions>
       <AssemblerListingLocation>debug\</AssemblerListingLocation>
       <BrowseInformation>false</BrowseInformation>
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
@@ -119,13 +119,14 @@
     </ClCompile>
     <Link>
       <AdditionalDependencies>$(QTDIR)\lib\Qt5Xmld.lib;$(QTDIR)\lib\Qt5Cored.lib;Qt5Networkd.lib;%(AdditionalDependencies)</AdditionalDependencies>
-      <AdditionalLibraryDirectories>$(QTDIR)\lib;D:\Kean\tools\Qt\5.2.0\msvc2010_opengl\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>$(QTDIR)\lib;D:\kean\tools\qt5.5.1\5.5\msvc2010\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <DataExecutionPrevention>true</DataExecutionPrevention>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <IgnoreImportLibrary>true</IgnoreImportLibrary>
       <LinkDLL>true</LinkDLL>
       <OutputFile>$(OutDir)\RC_DTL_TCPServer.dll</OutputFile>
       <RandomizedBaseAddress>true</RandomizedBaseAddress>
+      <SubSystem>Windows</SubSystem>
       <SuppressStartupBanner>true</SuppressStartupBanner>
     </Link>
     <Midl>
@@ -137,7 +138,7 @@
       <PreprocessorDefinitions>_WINDOWS;UNICODE;WIN32;RC_TEMPLATE_LIBRARY;QT_XML_LIB;QT_CORE_LIB;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
     </ResourceCompile>
     <PostBuildEvent>
-      <Command>copy  "$(TargetPath)" "..\Debug"</Command>
+      <Command>copy "$(TargetPath)" ..\Debug</Command>
       <Message>Copy RC_DTL_TCPServer.dll to ..\Debug</Message>
     </PostBuildEvent>
   </ItemDefinitionGroup>
@@ -163,32 +164,30 @@
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\RC_Interface\ITcpDataWatcher.h" />
-    <ClInclude Include="..\RC_Interface\ITcpService.h" />
     <ClInclude Include="CConfig.h" />
     <ClInclude Include="CConfigBase.h" />
     <ClInclude Include="CModule.h" />
     <ClInclude Include="..\RC_Global\CModuleBase.h" />
     <ClInclude Include="CService.h" />
-    <CustomBuild Include="CWorkThread.h">
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
-      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Moc%27ing CWorkThread.h...</Message>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
-      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp"  -D_WINDOWS -DUNICODE -DWIN32 -DRC_TEMPLATE_LIBRARY -DQT_NO_DEBUG -DQT_XML_LIB -DQT_CORE_LIB -DNDEBUG -DQT_NETWORK_LIB -D_WINDLL  "-I.\..\RC_Global" "-I.\..\RC_Interface" "-ID:\Kean\tools\Qt\5.2.0\msvc2010_opengl\include" "-ID:\Kean\tools\Qt\5.2.0\msvc2010_opengl\include\QtXml" "-ID:\Kean\tools\Qt\5.2.0\msvc2010_opengl\include\QtCore" "-I.\release" "-ID:\Kean\tools\Qt\5.2.0\msvc2010_opengl\mkspecs\win32-msvc2010" "-I$(QTDIR)\include\QtNetwork" "-I."</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
-      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Moc%27ing CWorkThread.h...</Message>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
-      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp"  -D_WINDOWS -DUNICODE -DWIN32 -DRC_TEMPLATE_LIBRARY -DQT_XML_LIB -DQT_CORE_LIB -DQT_NETWORK_LIB -D_WINDLL  "-I.\..\RC_Global" "-I.\..\RC_Interface" "-ID:\Kean\tools\Qt\5.2.0\msvc2010_opengl\include" "-ID:\Kean\tools\Qt\5.2.0\msvc2010_opengl\include\QtXml" "-ID:\Kean\tools\Qt\5.2.0\msvc2010_opengl\include\QtCore" "-I.\debug" "-ID:\Kean\tools\Qt\5.2.0\msvc2010_opengl\mkspecs\win32-msvc2010" "-I$(QTDIR)\include\QtNetwork" "-I."</Command>
-    </CustomBuild>
     <CustomBuild Include="CTcpServer.h">
       <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
       <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Moc%27ing CTcpServer.h...</Message>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
-      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp"  -D_WINDOWS -DUNICODE -DWIN32 -DRC_TEMPLATE_LIBRARY -DQT_NO_DEBUG -DQT_XML_LIB -DQT_CORE_LIB -DNDEBUG -DQT_NETWORK_LIB -D_WINDLL  "-I.\..\RC_Global" "-I.\..\RC_Interface" "-ID:\Kean\tools\Qt\5.2.0\msvc2010_opengl\include" "-ID:\Kean\tools\Qt\5.2.0\msvc2010_opengl\include\QtXml" "-ID:\Kean\tools\Qt\5.2.0\msvc2010_opengl\include\QtCore" "-I.\release" "-ID:\Kean\tools\Qt\5.2.0\msvc2010_opengl\mkspecs\win32-msvc2010" "-I$(QTDIR)\include\QtNetwork" "-I."</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp"  -D_WINDOWS -DUNICODE -DWIN32 -DRC_TEMPLATE_LIBRARY -DQT_NO_DEBUG -DQT_XML_LIB -DQT_CORE_LIB -DNDEBUG -DQT_NETWORK_LIB -D_WINDLL "-I." "-I.\..\RC_Global" "-I.\..\RC_Interface" "-ID:\kean\tools\qt5.5.1\5.5\msvc2010\include" "-ID:\kean\tools\qt5.5.1\5.5\msvc2010\include\QtXml" "-ID:\kean\tools\qt5.5.1\5.5\msvc2010\include\QtCore" "-I.\release" "-ID:\kean\tools\qt5.5.1\5.5\msvc2010\mkspecs\win32-msvc2010" "-I$(QTDIR)\include\QtNetwork"</Command>
       <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
       <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Moc%27ing CTcpServer.h...</Message>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
-      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp"  -D_WINDOWS -DUNICODE -DWIN32 -DRC_TEMPLATE_LIBRARY -DQT_XML_LIB -DQT_CORE_LIB -DQT_NETWORK_LIB -D_WINDLL  "-I.\..\RC_Global" "-I.\..\RC_Interface" "-ID:\Kean\tools\Qt\5.2.0\msvc2010_opengl\include" "-ID:\Kean\tools\Qt\5.2.0\msvc2010_opengl\include\QtXml" "-ID:\Kean\tools\Qt\5.2.0\msvc2010_opengl\include\QtCore" "-I.\debug" "-ID:\Kean\tools\Qt\5.2.0\msvc2010_opengl\mkspecs\win32-msvc2010" "-I$(QTDIR)\include\QtNetwork" "-I."</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp"  -D_WINDOWS -DUNICODE -DWIN32 -DRC_TEMPLATE_LIBRARY -DQT_XML_LIB -DQT_CORE_LIB -DQT_NETWORK_LIB -D_WINDLL "-I." "-I.\..\RC_Global" "-I.\..\RC_Interface" "-ID:\kean\tools\qt5.5.1\5.5\msvc2010\include" "-ID:\kean\tools\qt5.5.1\5.5\msvc2010\include\QtXml" "-ID:\kean\tools\qt5.5.1\5.5\msvc2010\include\QtCore" "-I.\debug" "-ID:\kean\tools\qt5.5.1\5.5\msvc2010\mkspecs\win32-msvc2010" "-I$(QTDIR)\include\QtNetwork"</Command>
+    </CustomBuild>
+    <CustomBuild Include="CWorkThread.h">
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Moc%27ing CWorkThread.h...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp"  -D_WINDOWS -DUNICODE -DWIN32 -DRC_TEMPLATE_LIBRARY -DQT_NO_DEBUG -DQT_XML_LIB -DQT_CORE_LIB -DNDEBUG -DQT_NETWORK_LIB -D_WINDLL "-I." "-I.\..\RC_Global" "-I.\..\RC_Interface" "-ID:\kean\tools\qt5.5.1\5.5\msvc2010\include" "-ID:\kean\tools\qt5.5.1\5.5\msvc2010\include\QtXml" "-ID:\kean\tools\qt5.5.1\5.5\msvc2010\include\QtCore" "-I.\release" "-ID:\kean\tools\qt5.5.1\5.5\msvc2010\mkspecs\win32-msvc2010" "-I$(QTDIR)\include\QtNetwork"</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Moc%27ing CWorkThread.h...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp"  -D_WINDOWS -DUNICODE -DWIN32 -DRC_TEMPLATE_LIBRARY -DQT_XML_LIB -DQT_CORE_LIB -DQT_NETWORK_LIB -D_WINDLL "-I." "-I.\..\RC_Global" "-I.\..\RC_Interface" "-ID:\kean\tools\qt5.5.1\5.5\msvc2010\include" "-ID:\kean\tools\qt5.5.1\5.5\msvc2010\include\QtXml" "-ID:\kean\tools\qt5.5.1\5.5\msvc2010\include\QtCore" "-I.\debug" "-ID:\kean\tools\qt5.5.1\5.5\msvc2010\mkspecs\win32-msvc2010" "-I$(QTDIR)\include\QtNetwork"</Command>
     </CustomBuild>
     <ClInclude Include="EComponentType.h" />
     <ClInclude Include="..\RC_Interface\IConfig.h" />
@@ -197,7 +196,7 @@
   <ImportGroup Label="ExtensionTargets" />
   <ProjectExtensions>
     <VisualStudio>
-      <UserProperties Qt5Version_x0020_Win32="5.2.0" UicDir=".\GeneratedFiles" RccDir=".\GeneratedFiles" />
+      <UserProperties Qt5Version_x0020_Win32="5.5.1" UicDir=".\GeneratedFiles" RccDir=".\GeneratedFiles" />
     </VisualStudio>
   </ProjectExtensions>
 </Project>
