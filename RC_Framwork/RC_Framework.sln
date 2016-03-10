@@ -24,6 +24,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "RC_UI_TestTcpServer", "RC_U
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "RC_UI_TestTcpClient", "RC_UI_TestTcpClient\RC_UI_TestTcpClient.vcxproj", "{B341C297-061A-3D82-8769-D272EE0137EF}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "SX_RC_CTRL", "SX_RC_CTRL\SX_RC_CTRL.vcxproj", "{DFCE417D-CD16-3EBD-B10B-EAFEF8C419A9}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Win32 = Debug|Win32
@@ -78,6 +80,10 @@ Global
 		{B341C297-061A-3D82-8769-D272EE0137EF}.Debug|Win32.Build.0 = Debug|Win32
 		{B341C297-061A-3D82-8769-D272EE0137EF}.Release|Win32.ActiveCfg = Release|Win32
 		{B341C297-061A-3D82-8769-D272EE0137EF}.Release|Win32.Build.0 = Release|Win32
+		{DFCE417D-CD16-3EBD-B10B-EAFEF8C419A9}.Debug|Win32.ActiveCfg = Debug|Win32
+		{DFCE417D-CD16-3EBD-B10B-EAFEF8C419A9}.Debug|Win32.Build.0 = Debug|Win32
+		{DFCE417D-CD16-3EBD-B10B-EAFEF8C419A9}.Release|Win32.ActiveCfg = Release|Win32
+		{DFCE417D-CD16-3EBD-B10B-EAFEF8C419A9}.Release|Win32.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
