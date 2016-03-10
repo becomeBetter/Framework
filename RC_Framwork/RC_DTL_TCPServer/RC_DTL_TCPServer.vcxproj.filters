@@ -23,12 +23,12 @@
       <ParseFiles>true</ParseFiles>
     </Filter>
     <Filter Include="Generated Files\Release">
-      <UniqueIdentifier>{8e5175f6-ad83-4139-be9f-1b9dffc3c97b}</UniqueIdentifier>
+      <UniqueIdentifier>{6a2c09ce-9a71-4351-9ccb-b1018d5a21f2}</UniqueIdentifier>
       <Extensions>cpp;moc</Extensions>
       <SourceControlFiles>False</SourceControlFiles>
     </Filter>
     <Filter Include="Generated Files\Debug">
-      <UniqueIdentifier>{0764ae74-0e33-4f41-ad86-62d6697d4d0d}</UniqueIdentifier>
+      <UniqueIdentifier>{37cb4e3b-be1a-4889-a9c7-45f8ca0409bd}</UniqueIdentifier>
       <Extensions>cpp;moc</Extensions>
       <SourceControlFiles>False</SourceControlFiles>
     </Filter>
@@ -49,15 +49,6 @@
     <ClCompile Include="CService.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="CWorkThread.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="GeneratedFiles\Release\moc_CWorkThread.cpp">
-      <Filter>Generated Files\Release</Filter>
-    </ClCompile>
-    <ClCompile Include="GeneratedFiles\Debug\moc_CWorkThread.cpp">
-      <Filter>Generated Files\Debug</Filter>
-    </ClCompile>
     <ClCompile Include="CTcpServer.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
@@ -65,6 +56,15 @@
       <Filter>Generated Files\Release</Filter>
     </ClCompile>
     <ClCompile Include="GeneratedFiles\Debug\moc_CTcpServer.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="CWorkThread.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_CWorkThread.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_CWorkThread.cpp">
       <Filter>Generated Files\Debug</Filter>
     </ClCompile>
   </ItemGroup>
@@ -90,18 +90,12 @@
     <ClInclude Include="..\RC_Interface\IConfig.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="..\RC_Interface\ITcpDataWatcher.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="..\RC_Interface\ITcpService.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <CustomBuild Include="CWorkThread.h">
+    <CustomBuild Include="CTcpServer.h">
       <Filter>Header Files</Filter>
     </CustomBuild>
-    <CustomBuild Include="CTcpServer.h">
+    <CustomBuild Include="CWorkThread.h">
       <Filter>Header Files</Filter>
     </CustomBuild>
   </ItemGroup>

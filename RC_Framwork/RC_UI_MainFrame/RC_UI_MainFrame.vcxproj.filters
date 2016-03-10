@@ -26,12 +26,12 @@
       <Extensions>cpp;c;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
     </Filter>
     <Filter Include="Generated Files\Release">
-      <UniqueIdentifier>{92b07970-1dd8-4933-9ccd-9903586cc97b}</UniqueIdentifier>
+      <UniqueIdentifier>{e2168f7e-11aa-4ef2-81d5-621e32b1d142}</UniqueIdentifier>
       <Extensions>cpp;moc</Extensions>
       <SourceControlFiles>False</SourceControlFiles>
     </Filter>
     <Filter Include="Generated Files\Debug">
-      <UniqueIdentifier>{da92fc74-c897-4d8e-b94d-084cec3e87a2}</UniqueIdentifier>
+      <UniqueIdentifier>{13b0bbe8-a863-4959-9023-e6e259bdefae}</UniqueIdentifier>
       <Extensions>cpp;moc</Extensions>
       <SourceControlFiles>False</SourceControlFiles>
     </Filter>
@@ -62,7 +62,7 @@
       <Filter>Generated Files\Debug</Filter>
     </ClCompile>
     <ClCompile Include="CNoTitleBarDockWidget.cpp">
-      <Filter>Source Files</Filter>
+      <Filter>Generated Files</Filter>
     </ClCompile>
     <ClCompile Include="GeneratedFiles\Release\moc_CNoTitleBarDockWidget.cpp">
       <Filter>Generated Files\Release</Filter>
@@ -102,7 +102,7 @@
   </ItemGroup>
   <ItemGroup>
     <CustomBuild Include="CNoTitleBarDockWidget.h">
-      <Filter>Header Files</Filter>
+      <Filter>Generated Files</Filter>
     </CustomBuild>
   </ItemGroup>
 </Project>

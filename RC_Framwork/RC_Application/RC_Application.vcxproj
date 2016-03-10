@@ -11,7 +11,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{12C8F7B6-C89B-3429-9669-59A0BE907769}</ProjectGuid>
+    <ProjectGuid>{D2C69880-C295-36D8-BF16-F6CE5B523CC9}</ProjectGuid>
     <RootNamespace>RC_Application</RootNamespace>
     <Keyword>Qt4VSv1.0</Keyword>
   </PropertyGroup>
@@ -54,15 +54,14 @@
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <ClCompile>
-      <AdditionalIncludeDirectories>"..\RC_Global";"..\RC_Interface";"D:\Kean\tools\Qt\5.2.0\msvc2010_opengl\include";"D:\Kean\tools\Qt\5.2.0\msvc2010_opengl\include\QtWidgets";"D:\Kean\tools\Qt\5.2.0\msvc2010_opengl\include\QtXml";"D:\Kean\tools\Qt\5.2.0\msvc2010_opengl\include\QtGui";"D:\Kean\tools\Qt\5.2.0\msvc2010_opengl\include\QtCore";"release";D:\Kean\tools\Qt\5.2.0\msvc2010_opengl\mkspecs\win32-msvc2010;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <AdditionalOptions>-Zm200 -w34100 -w34189 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>.;..\RC_Global;..\RC_Interface;D:\kean\tools\qt5.5.1\5.5\msvc2010\include;D:\kean\tools\qt5.5.1\5.5\msvc2010\include\QtWidgets;D:\kean\tools\qt5.5.1\5.5\msvc2010\include\QtGui;D:\kean\tools\qt5.5.1\5.5\msvc2010\include\QtANGLE;D:\kean\tools\qt5.5.1\5.5\msvc2010\include\QtXml;D:\kean\tools\qt5.5.1\5.5\msvc2010\include\QtCore;release;D:\kean\tools\qt5.5.1\5.5\msvc2010\mkspecs\win32-msvc2010;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>-w34100 -w34189 -w44996 %(AdditionalOptions)</AdditionalOptions>
       <AssemblerListingLocation>release\</AssemblerListingLocation>
       <BrowseInformation>false</BrowseInformation>
-      <DebugInformationFormat>None</DebugInformationFormat>
       <ExceptionHandling>Sync</ExceptionHandling>
       <ObjectFileName>$(IntDir)</ObjectFileName>
       <Optimization>MaxSpeed</Optimization>
-      <PreprocessorDefinitions>_WINDOWS;UNICODE;WIN32;QT_NO_DEBUG;QT_WIDGETS_LIB;QT_XML_LIB;QT_GUI_LIB;QT_CORE_LIB;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>_WINDOWS;UNICODE;WIN32;QT_NO_DEBUG;QT_WIDGETS_LIB;QT_GUI_LIB;QT_XML_LIB;QT_CORE_LIB;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <PreprocessToFile>false</PreprocessToFile>
       <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
       <RuntimeTypeInfo>true</RuntimeTypeInfo>
@@ -72,8 +71,8 @@
       <ProgramDataBaseFileName>$(IntDir)vc$(PlatformToolsetVersion).pdb</ProgramDataBaseFileName>
     </ClCompile>
     <Link>
-      <AdditionalDependencies>glu32.lib;opengl32.lib;gdi32.lib;user32.lib;qtmain.lib;$(QTDIR)\lib\Qt5Widgets.lib;$(QTDIR)\lib\Qt5Xml.lib;$(QTDIR)\lib\Qt5Gui.lib;$(QTDIR)\lib\Qt5Core.lib;%(AdditionalDependencies)</AdditionalDependencies>
-      <AdditionalLibraryDirectories>$(QTDIR)\lib;D:\Kean\tools\Qt\5.2.0\msvc2010_opengl\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>D:\kean\tools\qt5.5.1\5.5\msvc2010\lib\qtmain.lib;shell32.lib;D:/kean/tools/qt5.5.1/5.5/msvc2010/lib\Qt5Core.lib;D:\kean\tools\qt5.5.1\5.5\msvc2010\lib\Qt5Widgets.lib;D:\kean\tools\qt5.5.1\5.5\msvc2010\lib\Qt5Gui.lib;D:\kean\tools\qt5.5.1\5.5\msvc2010\lib\Qt5Xml.lib;D:\kean\tools\qt5.5.1\5.5\msvc2010\lib\Qt5Core.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>D:\kean\tools\qt5.5.1\5.5\msvc2010\lib;D:/kean/tools/qt5.5.1/5.5/msvc2010/lib;$(QTDIR)\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <AdditionalOptions>"/MANIFESTDEPENDENCY:type='win32' name='Microsoft.Windows.Common-Controls' version='6.0.0.0' publicKeyToken='6595b64144ccf1df' language='*' processorArchitecture='*'" %(AdditionalOptions)</AdditionalOptions>
       <DataExecutionPrevention>true</DataExecutionPrevention>
       <GenerateDebugInformation>false</GenerateDebugInformation>
@@ -90,20 +89,20 @@
       <WarningLevel>0</WarningLevel>
     </Midl>
     <ResourceCompile>
-      <PreprocessorDefinitions>_WINDOWS;UNICODE;WIN32;QT_NO_DEBUG;QT_WIDGETS_LIB;QT_XML_LIB;QT_GUI_LIB;QT_CORE_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>_WINDOWS;UNICODE;WIN32;QT_NO_DEBUG;QT_WIDGETS_LIB;QT_GUI_LIB;QT_XML_LIB;QT_CORE_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
     </ResourceCompile>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
-      <AdditionalIncludeDirectories>"..\RC_Global";"..\RC_Interface";"D:\Kean\tools\Qt\5.2.0\msvc2010_opengl\include";"D:\Kean\tools\Qt\5.2.0\msvc2010_opengl\include\QtWidgets";"D:\Kean\tools\Qt\5.2.0\msvc2010_opengl\include\QtXml";"D:\Kean\tools\Qt\5.2.0\msvc2010_opengl\include\QtGui";"D:\Kean\tools\Qt\5.2.0\msvc2010_opengl\include\QtCore";"debug";D:\Kean\tools\Qt\5.2.0\msvc2010_opengl\mkspecs\win32-msvc2010;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <AdditionalOptions>-Zm200 -w34100 -w34189 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>.;..\RC_Global;..\RC_Interface;D:\kean\tools\qt5.5.1\5.5\msvc2010\include;D:\kean\tools\qt5.5.1\5.5\msvc2010\include\QtWidgets;D:\kean\tools\qt5.5.1\5.5\msvc2010\include\QtGui;D:\kean\tools\qt5.5.1\5.5\msvc2010\include\QtANGLE;D:\kean\tools\qt5.5.1\5.5\msvc2010\include\QtXml;D:\kean\tools\qt5.5.1\5.5\msvc2010\include\QtCore;debug;D:\kean\tools\qt5.5.1\5.5\msvc2010\mkspecs\win32-msvc2010;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>-w34100 -w34189 -w44996 %(AdditionalOptions)</AdditionalOptions>
       <AssemblerListingLocation>debug\</AssemblerListingLocation>
       <BrowseInformation>false</BrowseInformation>
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
       <ExceptionHandling>Sync</ExceptionHandling>
       <ObjectFileName>$(IntDir)</ObjectFileName>
       <Optimization>Disabled</Optimization>
-      <PreprocessorDefinitions>_WINDOWS;UNICODE;WIN32;QT_WIDGETS_LIB;QT_XML_LIB;QT_GUI_LIB;QT_CORE_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>_WINDOWS;UNICODE;WIN32;QT_WIDGETS_LIB;QT_GUI_LIB;QT_XML_LIB;QT_CORE_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <PreprocessToFile>false</PreprocessToFile>
       <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
       <RuntimeTypeInfo>true</RuntimeTypeInfo>
@@ -113,8 +112,8 @@
       <ProgramDataBaseFileName>$(IntDir)vc$(PlatformToolsetVersion).pdb</ProgramDataBaseFileName>
     </ClCompile>
     <Link>
-      <AdditionalDependencies>glu32.lib;opengl32.lib;gdi32.lib;user32.lib;qtmaind.lib;$(QTDIR)\lib\Qt5Widgetsd.lib;$(QTDIR)\lib\Qt5Xmld.lib;$(QTDIR)\lib\Qt5Guid.lib;$(QTDIR)\lib\Qt5Cored.lib;%(AdditionalDependencies)</AdditionalDependencies>
-      <AdditionalLibraryDirectories>$(QTDIR)\lib;D:\Kean\tools\Qt\5.2.0\msvc2010_opengl\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>D:\kean\tools\qt5.5.1\5.5\msvc2010\lib\qtmaind.lib;shell32.lib;D:/kean/tools/qt5.5.1/5.5/msvc2010/lib\Qt5Cored.lib;D:\kean\tools\qt5.5.1\5.5\msvc2010\lib\Qt5Widgetsd.lib;D:\kean\tools\qt5.5.1\5.5\msvc2010\lib\Qt5Guid.lib;D:\kean\tools\qt5.5.1\5.5\msvc2010\lib\Qt5Xmld.lib;D:\kean\tools\qt5.5.1\5.5\msvc2010\lib\Qt5Cored.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>D:\kean\tools\qt5.5.1\5.5\msvc2010\lib;D:/kean/tools/qt5.5.1/5.5/msvc2010/lib;$(QTDIR)\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <AdditionalOptions>"/MANIFESTDEPENDENCY:type='win32' name='Microsoft.Windows.Common-Controls' version='6.0.0.0' publicKeyToken='6595b64144ccf1df' language='*' processorArchitecture='*'" %(AdditionalOptions)</AdditionalOptions>
       <DataExecutionPrevention>true</DataExecutionPrevention>
       <GenerateDebugInformation>true</GenerateDebugInformation>
@@ -130,7 +129,7 @@
       <WarningLevel>0</WarningLevel>
     </Midl>
     <ResourceCompile>
-      <PreprocessorDefinitions>_WINDOWS;UNICODE;WIN32;QT_WIDGETS_LIB;QT_XML_LIB;QT_GUI_LIB;QT_CORE_LIB;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>_WINDOWS;UNICODE;WIN32;QT_WIDGETS_LIB;QT_GUI_LIB;QT_XML_LIB;QT_CORE_LIB;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
     </ResourceCompile>
   </ItemDefinitionGroup>
   <ItemGroup>
@@ -147,7 +146,7 @@
   <ImportGroup Label="ExtensionTargets" />
   <ProjectExtensions>
     <VisualStudio>
-      <UserProperties Qt5Version_x0020_Win32="5.2.0" UicDir=".\GeneratedFiles" RccDir=".\GeneratedFiles" />
+      <UserProperties Qt5Version_x0020_Win32="5.5.1" UicDir=".\GeneratedFiles" RccDir=".\GeneratedFiles" />
     </VisualStudio>
   </ProjectExtensions>
 </Project>
